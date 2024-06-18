@@ -396,7 +396,7 @@
 				DEVELOPMENT_TEAM = 9RL93J625H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Minima/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Minima;
+				INFOPLIST_KEY_CFBundleDisplayName = "자카";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -432,7 +432,7 @@
 				DEVELOPMENT_TEAM = 9RL93J625H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Minima/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Minima;
+				INFOPLIST_KEY_CFBundleDisplayName = "자카";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
