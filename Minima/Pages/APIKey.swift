@@ -1,5 +1,5 @@
 //
-//  .gitignore.swift
+//  APIKey.swift
 //  Minima
 //
 //  Created by Jaka on 2024-06-18.

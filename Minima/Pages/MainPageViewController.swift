@@ -70,7 +70,7 @@ class MainPageViewController: UIViewController {
         tableView.snp.makeConstraints { make in
             make.top.equalTo(recentSearchLabel.snp.bottom)
             make.horizontalEdges.equalTo(recentSearchLabel)
-            make.bottom.equalTo(view.safeAreaLayoutGuide)
+            make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-1)
         }
         searchField.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide)

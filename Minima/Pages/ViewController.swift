@@ -35,7 +35,6 @@ class ViewController: UIViewController {
             make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-30)
             make.centerX.equalToSuperview()
             make.height.equalTo(40)
-            
         }
         
         view.backgroundColor = .white

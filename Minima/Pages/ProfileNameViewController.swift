@@ -68,26 +68,28 @@ class ProfileNameViewController: UIViewController {
     }
     
     @objc func editingChange() {
-        guard nicknameTextField.text != "" else {return}
-        
-        if nicknameTextField.text!.count < 2 || nicknameTextField.text!.count > 10 {
+        guard let text = nicknameTextField.text, !text.isEmpty else { return }
+
+        if text.count < 2 || text.count > 10 {
             nicknameGuideline.text = "2글자 이상 10글자 미만으로 입력해주세요"
-            
         }
-        else if blackList.contains(where: nicknameTextField.text!.contains) {
+        else if blackList.contains(where: text.contains) {
             nicknameGuideline.text = "닉네임에 @,#,$,% 는 포함할 수 없어요"
         }
-        else if nicknameTextField.text!.rangeOfCharacter(from: numbers) != nil {
+        else if text.rangeOfCharacter(from: numbers) != nil {
             nicknameGuideline.text = "닉네임에 숫자는 포함할 수 없어요"
+        }
+        else if text.range(of: "\\s{2,}", options: .regularExpression) != nil {
+            nicknameGuideline.text = "연속된 공백을 포함할 수 없어요"
         }
         else {
             nicknameGuideline.text = "사용할 수 있는 닉네임이에요"
             completeButton.isEnabled = true
-            completeButton.backgroundColor = Color.orange
+            completeButton.backgroundColor = UIColor.orange
             return
         }
         completeButton.isEnabled = false
-        completeButton.backgroundColor = Color.lightGray
+        completeButton.backgroundColor = UIColor.lightGray
     }
     
     @objc func completeButtonClicked() {
