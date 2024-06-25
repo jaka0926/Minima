@@ -1,5 +1,5 @@
 //
-//  SearchResultCollectionViewCell.swift
+//  _SearchResultCollectionViewCell.swift
 //  Minima
 //
 //  Created by Jaka on 2024-06-16.
@@ -52,7 +52,6 @@ class SearchResultCollectionViewCell: UICollectionViewCell {
             make.size.equalTo(30)
         }
         
-        posterImage.backgroundColor = .systemTeal
         posterImage.layer.cornerRadius = 10
         posterImage.clipsToBounds = true
         posterImage.contentMode = .scaleAspectFill

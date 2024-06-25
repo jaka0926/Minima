@@ -1,5 +1,5 @@
 //
-//  SettingTableViewCell.swift
+//  _SettingTableViewCell.swift
 //  Minima
 //
 //  Created by Jaka on 2024-06-24.

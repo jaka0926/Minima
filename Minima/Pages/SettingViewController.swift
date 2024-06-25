@@ -54,9 +54,9 @@ class SettingViewController: UIViewController {
             make.size.equalTo(100)
         }
         menuTable.snp.makeConstraints { make in
+            make.top.equalTo(profileView.snp.bottom)
             make.horizontalEdges.equalTo(view.safeAreaLayoutGuide)
             make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-1)
-            make.top.equalTo(profileView.snp.bottom)
         }
         border.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide)
@@ -78,16 +78,13 @@ class SettingViewController: UIViewController {
         
         menuTable.isScrollEnabled = false
         menuTable.rowHeight = 50
+        menuTable.separatorInset = .zero
         
     }
     @objc func profileButtonClicked() {
         print(#function)
         let vc = ProfileEditViewController()
         navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @objc func menuItemClicked() {
-        
     }
 }
 
@@ -105,10 +102,13 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
             cell.savedItemLabel.text = "\(savedItemsCount)개의 상품"
             cell.savedItemIcon.image = UIImage(named: "like_selected")
         }
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        
         if indexPath.row == 4 {
             showAlert(title: "탈퇴하기", message: "탈퇴를 하면 데이터가 모두 초기화됩니다. 탈퇴 하시겠습니까?") {
                 

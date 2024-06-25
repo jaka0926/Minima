@@ -1,5 +1,5 @@
 //
-//  MainPageTableViewCell.swift
+//  _MainPageTableViewCell.swift
 //  Minima
 //
 //  Created by Jaka on 2024-06-18.

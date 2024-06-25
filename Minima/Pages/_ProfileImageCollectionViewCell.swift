@@ -1,5 +1,5 @@
 //
-//  ProfileImageCollectionViewCell.swift
+//  _ProfileImageCollectionViewCell.swift
 //  Minima
 //
 //  Created by Jaka on 2024-06-15.

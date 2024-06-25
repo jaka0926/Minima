@@ -35,7 +35,6 @@ class ProductDetailViewController: UIViewController {
             make.edges.equalTo(view.safeAreaLayoutGuide)
         }
         
-        webView.backgroundColor = .systemTeal
         let url = URL(string: webUrl)!
         let request = URLRequest(url: url)
         webView.load(request)

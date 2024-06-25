@@ -131,7 +131,9 @@ class MainPageViewController: UIViewController {
     
     @objc func deleteAll() {
         list.removeAll()
-        print(#function, list)
+        tableView.isHidden = true
+        recentSearchLabel.isHidden = true
+        deleteAllButton.isHidden = true
         tableView.reloadData()
         UserDefaults.standard.set(list, forKey: "recentSearchList")
     }
@@ -160,6 +162,11 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
     @objc func deleteRow(_ sender: UIButton) {
     
         list.remove(at: sender.tag)
+        if list.isEmpty {
+            tableView.isHidden = true
+            recentSearchLabel.isHidden = true
+            deleteAllButton.isHidden = true
+        }
         tableView.reloadData()
         UserDefaults.standard.set(list, forKey: "recentSearchList")
         print(list)

@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE0B73AD2C2999800005FAA8 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B73AC2C2999800005FAA8 /* SettingTableViewCell.swift */; };
-		CE0B73AF2C29BFC70005FAA8 /* SettingVC-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B73AE2C29BFC70005FAA8 /* SettingVC-Extension.swift */; };
+		CE0B73AD2C2999800005FAA8 /* _SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B73AC2C2999800005FAA8 /* _SettingTableViewCell.swift */; };
+		CE0B73AF2C29BFC70005FAA8 /* _SettingVC-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B73AE2C29BFC70005FAA8 /* _SettingVC-Extension.swift */; };
 		CE0B73B32C29CF570005FAA8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CE0B73B22C29CF570005FAA8 /* .gitignore */; };
 		CE554C7D2C2181140071ED5E /* SettingProfileUIConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE554C7C2C2181140071ED5E /* SettingProfileUIConfigure.swift */; };
 		CE554C7F2C2191370071ED5E /* ProfileImageEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE554C7E2C2191370071ED5E /* ProfileImageEditViewController.swift */; };
 		CE554C812C21920E0071ED5E /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE554C802C21920E0071ED5E /* ProfileEditViewController.swift */; };
 		CE554C832C21A7570071ED5E /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE554C822C21A7570071ED5E /* APIKey.swift */; };
 		CE63349C2C1ED39700BAB108 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63349B2C1ED39700BAB108 /* SearchResultViewController.swift */; };
-		CE63349E2C1EF89200BAB108 /* SearchResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63349D2C1EF89200BAB108 /* SearchResultCollectionViewCell.swift */; };
+		CE63349E2C1EF89200BAB108 /* _SearchResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63349D2C1EF89200BAB108 /* _SearchResultCollectionViewCell.swift */; };
 		CE6334A02C1F0BFF00BAB108 /* ShoppingStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63349F2C1F0BFF00BAB108 /* ShoppingStruct.swift */; };
 		CE6A6BD02C20657D000DC2DC /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A6BCF2C20657D000DC2DC /* ProductDetailViewController.swift */; };
 		CE6A6BD22C2095D1000DC2DC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A6BD12C2095D1000DC2DC /* MainTabBarController.swift */; };
 		CE6A6BD42C209643000DC2DC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A6BD32C209643000DC2DC /* SettingViewController.swift */; };
 		CE6A6BD72C209916000DC2DC /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE6A6BD62C209916000DC2DC /* IQKeyboardManagerSwift */; };
-		CE6A6BD92C20A371000DC2DC /* MainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A6BD82C20A371000DC2DC /* MainPageTableViewCell.swift */; };
+		CE6A6BD92C20A371000DC2DC /* _MainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A6BD82C20A371000DC2DC /* _MainPageTableViewCell.swift */; };
 		CE7AC3462C1D7B9A00A4D78D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC3452C1D7B9A00A4D78D /* AppDelegate.swift */; };
 		CE7AC3482C1D7B9A00A4D78D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC3472C1D7B9A00A4D78D /* SceneDelegate.swift */; };
 		CE7AC34A2C1D7B9A00A4D78D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC3492C1D7B9A00A4D78D /* ViewController.swift */; };
@@ -34,25 +34,25 @@
 		CE7AC3652C1D8AF500A4D78D /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC3642C1D8AF500A4D78D /* UIConfig.swift */; };
 		CE7AC3672C1D926D00A4D78D /* ProfileNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC3662C1D926D00A4D78D /* ProfileNameViewController.swift */; };
 		CE7AC3692C1DB3E300A4D78D /* ProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC3682C1DB3E300A4D78D /* ProfileImageViewController.swift */; };
-		CE7AC36B2C1DB8EB00A4D78D /* ProfileImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC36A2C1DB8EB00A4D78D /* ProfileImageCollectionViewCell.swift */; };
+		CE7AC36B2C1DB8EB00A4D78D /* _ProfileImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC36A2C1DB8EB00A4D78D /* _ProfileImageCollectionViewCell.swift */; };
 		CE7AC36D2C1E058100A4D78D /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC36C2C1E058000A4D78D /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE0B73AC2C2999800005FAA8 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
-		CE0B73AE2C29BFC70005FAA8 /* SettingVC-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingVC-Extension.swift"; sourceTree = "<group>"; };
+		CE0B73AC2C2999800005FAA8 /* _SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _SettingTableViewCell.swift; sourceTree = "<group>"; };
+		CE0B73AE2C29BFC70005FAA8 /* _SettingVC-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_SettingVC-Extension.swift"; sourceTree = "<group>"; };
 		CE0B73B22C29CF570005FAA8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CE554C7C2C2181140071ED5E /* SettingProfileUIConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileUIConfigure.swift; sourceTree = "<group>"; };
 		CE554C7E2C2191370071ED5E /* ProfileImageEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageEditViewController.swift; sourceTree = "<group>"; };
 		CE554C802C21920E0071ED5E /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		CE554C822C21A7570071ED5E /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		CE63349B2C1ED39700BAB108 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
-		CE63349D2C1EF89200BAB108 /* SearchResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE63349D2C1EF89200BAB108 /* _SearchResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _SearchResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE63349F2C1F0BFF00BAB108 /* ShoppingStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingStruct.swift; sourceTree = "<group>"; };
 		CE6A6BCF2C20657D000DC2DC /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		CE6A6BD12C2095D1000DC2DC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		CE6A6BD32C209643000DC2DC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		CE6A6BD82C20A371000DC2DC /* MainPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageTableViewCell.swift; sourceTree = "<group>"; };
+		CE6A6BD82C20A371000DC2DC /* _MainPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _MainPageTableViewCell.swift; sourceTree = "<group>"; };
 		CE7AC3422C1D7B9A00A4D78D /* Minima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7AC3452C1D7B9A00A4D78D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7AC3472C1D7B9A00A4D78D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		CE7AC3642C1D8AF500A4D78D /* UIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
 		CE7AC3662C1D926D00A4D78D /* ProfileNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNameViewController.swift; sourceTree = "<group>"; };
 		CE7AC3682C1DB3E300A4D78D /* ProfileImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageViewController.swift; sourceTree = "<group>"; };
-		CE7AC36A2C1DB8EB00A4D78D /* ProfileImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE7AC36A2C1DB8EB00A4D78D /* _ProfileImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _ProfileImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE7AC36C2C1E058000A4D78D /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE4F9B512C2AB1F800F9E653 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				CE554C822C21A7570071ED5E /* APIKey.swift */,
+				CE7AC3642C1D8AF500A4D78D /* UIConfig.swift */,
+				CE63349F2C1F0BFF00BAB108 /* ShoppingStruct.swift */,
+				CE554C7C2C2181140071ED5E /* SettingProfileUIConfigure.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
 		CE7AC3392C1D7B9A00A4D78D = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +114,7 @@
 		CE7AC3442C1D7B9A00A4D78D /* Minima */ = {
 			isa = PBXGroup;
 			children = (
+				CE4F9B512C2AB1F800F9E653 /* Extras */,
 				CE7AC3632C1D8AB900A4D78D /* Pages */,
 				CE7AC3622C1D8A7300A4D78D /* Main */,
 				CE7AC3452C1D7B9A00A4D78D /* AppDelegate.swift */,
@@ -125,23 +137,19 @@
 		CE7AC3632C1D8AB900A4D78D /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				CE554C822C21A7570071ED5E /* APIKey.swift */,
-				CE7AC3642C1D8AF500A4D78D /* UIConfig.swift */,
-				CE63349F2C1F0BFF00BAB108 /* ShoppingStruct.swift */,
-				CE554C7C2C2181140071ED5E /* SettingProfileUIConfigure.swift */,
 				CE7AC3492C1D7B9A00A4D78D /* ViewController.swift */,
 				CE7AC3662C1D926D00A4D78D /* ProfileNameViewController.swift */,
 				CE7AC3682C1DB3E300A4D78D /* ProfileImageViewController.swift */,
-				CE7AC36A2C1DB8EB00A4D78D /* ProfileImageCollectionViewCell.swift */,
-				CE7AC36C2C1E058000A4D78D /* MainPageViewController.swift */,
-				CE6A6BD82C20A371000DC2DC /* MainPageTableViewCell.swift */,
-				CE63349B2C1ED39700BAB108 /* SearchResultViewController.swift */,
-				CE63349D2C1EF89200BAB108 /* SearchResultCollectionViewCell.swift */,
-				CE6A6BCF2C20657D000DC2DC /* ProductDetailViewController.swift */,
+				CE7AC36A2C1DB8EB00A4D78D /* _ProfileImageCollectionViewCell.swift */,
 				CE6A6BD12C2095D1000DC2DC /* MainTabBarController.swift */,
+				CE7AC36C2C1E058000A4D78D /* MainPageViewController.swift */,
+				CE6A6BD82C20A371000DC2DC /* _MainPageTableViewCell.swift */,
+				CE63349B2C1ED39700BAB108 /* SearchResultViewController.swift */,
+				CE63349D2C1EF89200BAB108 /* _SearchResultCollectionViewCell.swift */,
+				CE6A6BCF2C20657D000DC2DC /* ProductDetailViewController.swift */,
 				CE6A6BD32C209643000DC2DC /* SettingViewController.swift */,
-				CE0B73AE2C29BFC70005FAA8 /* SettingVC-Extension.swift */,
-				CE0B73AC2C2999800005FAA8 /* SettingTableViewCell.swift */,
+				CE0B73AC2C2999800005FAA8 /* _SettingTableViewCell.swift */,
+				CE0B73AE2C29BFC70005FAA8 /* _SettingVC-Extension.swift */,
 				CE554C802C21920E0071ED5E /* ProfileEditViewController.swift */,
 				CE554C7E2C2191370071ED5E /* ProfileImageEditViewController.swift */,
 			);
@@ -238,8 +246,8 @@
 				CE7AC3692C1DB3E300A4D78D /* ProfileImageViewController.swift in Sources */,
 				CE7AC3672C1D926D00A4D78D /* ProfileNameViewController.swift in Sources */,
 				CE6A6BD02C20657D000DC2DC /* ProductDetailViewController.swift in Sources */,
-				CE0B73AF2C29BFC70005FAA8 /* SettingVC-Extension.swift in Sources */,
-				CE0B73AD2C2999800005FAA8 /* SettingTableViewCell.swift in Sources */,
+				CE0B73AF2C29BFC70005FAA8 /* _SettingVC-Extension.swift in Sources */,
+				CE0B73AD2C2999800005FAA8 /* _SettingTableViewCell.swift in Sources */,
 				CE6A6BD42C209643000DC2DC /* SettingViewController.swift in Sources */,
 				CE7AC34A2C1D7B9A00A4D78D /* ViewController.swift in Sources */,
 				CE7AC3652C1D8AF500A4D78D /* UIConfig.swift in Sources */,
@@ -248,11 +256,11 @@
 				CE554C7D2C2181140071ED5E /* SettingProfileUIConfigure.swift in Sources */,
 				CE554C7F2C2191370071ED5E /* ProfileImageEditViewController.swift in Sources */,
 				CE7AC3482C1D7B9A00A4D78D /* SceneDelegate.swift in Sources */,
-				CE7AC36B2C1DB8EB00A4D78D /* ProfileImageCollectionViewCell.swift in Sources */,
-				CE6A6BD92C20A371000DC2DC /* MainPageTableViewCell.swift in Sources */,
+				CE7AC36B2C1DB8EB00A4D78D /* _ProfileImageCollectionViewCell.swift in Sources */,
+				CE6A6BD92C20A371000DC2DC /* _MainPageTableViewCell.swift in Sources */,
 				CE6A6BD22C2095D1000DC2DC /* MainTabBarController.swift in Sources */,
 				CE6334A02C1F0BFF00BAB108 /* ShoppingStruct.swift in Sources */,
-				CE63349E2C1EF89200BAB108 /* SearchResultCollectionViewCell.swift in Sources */,
+				CE63349E2C1EF89200BAB108 /* _SearchResultCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
