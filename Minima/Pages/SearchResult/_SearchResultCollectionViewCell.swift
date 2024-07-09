@@ -15,11 +15,7 @@ class SearchResultCollectionViewCell: UICollectionViewCell {
     let productName = UILabel()
     let productPrice = UILabel()
     let saveButton = UIButton()
-    var saved: Bool = false {
-            didSet {
-                configureSaveButtonUI()
-            }
-        }
+    var saved = false
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -66,15 +62,15 @@ class SearchResultCollectionViewCell: UICollectionViewCell {
         
         configureSaveButtonUI()
         saveButton.addTarget(self, action: #selector(saveButtonClicked), for: .touchUpInside)
+        saveButton.layer.cornerRadius = 5
         
     }
     
     func configureSaveButtonUI() {
-        saveButton.layer.cornerRadius = 5
         saveButton.setImage(UIImage(named: saved ? "like_selected" : "like_unselected"), for: .normal)
         saveButton.backgroundColor = saved ? .white : Color.gray.withAlphaComponent(0.5)
-        
     }
+    
     @objc func saveButtonClicked() {
         saved.toggle()
         configureSaveButtonUI()

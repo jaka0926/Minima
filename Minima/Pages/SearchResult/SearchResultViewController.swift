@@ -209,10 +209,10 @@ extension SearchResultViewController: UICollectionViewDelegate, UICollectionView
         cell.posterImage.kf.setImage(with: url)
         cell.mallName.text = data.mallName
         cell.productName.text = productName
-        cell.productPrice.text = Double(data.lprice)!.formatted()
+        cell.productPrice.text = Double(data.lprice)!.formatted() + "원"
         
-        cell.saveButton.tag = indexPath.row
-        cell.saveButton.addTarget(self, action: #selector(saveButtonClicked(_:)), for: .touchUpInside)
+//        cell.saveButton.tag = indexPath.row
+//        cell.saveButton.addTarget(self, action: #selector(saveButtonClicked(_:)), for: .touchUpInside)
         
        
         return cell

@@ -17,8 +17,9 @@ class ProfileNameViewController: UIViewController {
     let completeButton = UIButton()
     let profileImageString = "profile_\(Int.random(in: 0...11))"
     lazy var currentProfileImage = UIImage(named: profileImageString)
-    let blackList = ["@", "#", "$", "%"]
-    let numbers = CharacterSet.decimalDigits
+    
+    
+    let viewModel = ProfileNameModel()
     
     override func viewIsAppearing(_ animated: Bool) {
         let savedProfileImage = UserDefaults.standard.string(forKey: "savedProfileImage")
@@ -51,53 +52,6 @@ class ProfileNameViewController: UIViewController {
         configureSnap()
         configureUI()
         
-    }
-    @objc func navBackButtonClicked() {
-        UserDefaults.standard.removeObject(forKey: "savedProfileImage")
-        navigationController?.popViewController(animated: true)
-    }
-    
-    @objc func profileImageClicked() {
-        let vc = ProfileImageViewController()
-        vc.currentProfileImage = currentProfileImage!
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @objc func returnKeyClicked() {
-        view.endEditing(true)
-    }
-    
-    @objc func editingChange() {
-        guard let text = nicknameTextField.text, !text.isEmpty else { return }
-
-        if text.count < 2 || text.count > 10 {
-            nicknameGuideline.text = "2글자 이상 10글자 미만으로 입력해주세요"
-        }
-        else if blackList.contains(where: text.contains) {
-            nicknameGuideline.text = "닉네임에 @,#,$,% 는 포함할 수 없어요"
-        }
-        else if text.rangeOfCharacter(from: numbers) != nil {
-            nicknameGuideline.text = "닉네임에 숫자는 포함할 수 없어요"
-        }
-        else if text.range(of: "\\s{2,}", options: .regularExpression) != nil {
-            nicknameGuideline.text = "연속된 공백을 포함할 수 없어요"
-        }
-        else {
-            nicknameGuideline.text = "사용할 수 있는 닉네임이에요"
-            completeButton.isEnabled = true
-            completeButton.backgroundColor = UIColor.orange
-            return
-        }
-        completeButton.isEnabled = false
-        completeButton.backgroundColor = UIColor.lightGray
-    }
-    
-    @objc func completeButtonClicked() {
-        
-        UserDefaults.standard.set(nicknameTextField.text!, forKey: "userName")
-        let vc = MainTabBarController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
     }
     
     func configureSnap() {
@@ -150,6 +104,35 @@ class ProfileNameViewController: UIViewController {
         completeButton.setTitle("완료", for: .normal)
         completeButton.layer.cornerRadius = 20
         completeButton.addTarget(self, action: #selector(completeButtonClicked), for: .touchUpInside)
+    }
+    @objc func navBackButtonClicked() {
+        UserDefaults.standard.removeObject(forKey: "savedProfileImage")
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func profileImageClicked() {
+        let vc = ProfileImageViewController()
+        vc.currentProfileImage = currentProfileImage!
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func returnKeyClicked() {
+        view.endEditing(true)
+    }
+    
+    @objc func editingChange() {
+        viewModel.inputValue = nicknameTextField.text ?? ""
+        nicknameGuideline.text = viewModel.outputValue
+        completeButton.isEnabled = viewModel.outputValid
+        completeButton.backgroundColor = completeButton.isEnabled ? Color.orange : Color.lightGray
+    }
+    
+    @objc func completeButtonClicked() {
+        
+        UserDefaults.standard.set(nicknameTextField.text!, forKey: "userName")
+        let vc = MainTabBarController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
     
 }

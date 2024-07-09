@@ -69,7 +69,6 @@ class ProfileImageViewController: UIViewController {
     }
     
     @objc func navBackButtonClicked() {
-           
         navigationController?.popViewController(animated: true)
     }
 }

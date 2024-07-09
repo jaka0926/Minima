@@ -114,12 +114,15 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
                 
                 UserDefaults.standard.removeObject(forKey: "savedProfileImage")
                 
-                let vc = ViewController()
+                let vc = OnBoardingViewController()
                 let nav = UINavigationController(rootViewController: vc)
                 nav.modalPresentationStyle = .fullScreen
                 
                 self.present(nav, animated: true)
             }
+        }
+        else if indexPath.row == 0 {
+            
         }
     }
 }
